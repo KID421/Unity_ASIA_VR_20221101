@@ -14,5 +14,14 @@ namespace KID
         private int scoreAdd = 100;
 
         private int scoreTotal;
+
+        /// <summary>
+        /// 添加分數並更新介面
+        /// </summary>
+        public void AddScore()
+        {
+            scoreTotal += scoreAdd;
+            textScore.text = "分數：" + scoreTotal;
+        }
     }
 }
